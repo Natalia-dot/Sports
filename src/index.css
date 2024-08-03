@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+
+:root {
+/*         ------        variables  */
+
+
+  /* Colores generales */
+  --color-primario: #89bcdf;
+  --color-secundario: #8b8b8b;
+  --color-fondo: #EDF6FB;
+
+  /*    -------    general --------- */
+
+  --color-background: #f3edeb;
+  --color-enhance: #Fafafa;
+
+  --color-background-nightmode: #35363A;
+  --color-enhance-nightmode: #1c191d;
+  --color-almost-black: rgb(13, 6, 9);
+
+  --color-form: #Fafafa;
+  --color-form-nightmode: #202124;
+
+  --color-formById: #fbf6f6;
+  --color-formById-nightmode: ;
+
+  --boder: 2px solid #ebe1de ;
+  --boder--nightmode: 2px solid #252424;
+
+  --border-form: 1px solid #e4dad9;
+
+
+  --color-h: black;
+  --color-h-nightmode: white;
+
+
+
+/*  --------- MOTO GP ----------   */
+--color-boton-motogp: #D90042;
+--color-boton-search: #D90042;
+
+/*  --------- FIFA  ----------   */
+
+
+
+/*  --------- POWERLIFTING ----------   */
+--color-boton-powerlifting: #AF363D;
+
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var( --color-background);
+  color: var(--color-h);
+  font-family: 'Rubik', sans-serif;
+}
+
+main{
+  
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

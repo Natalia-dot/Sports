@@ -1,0 +1,54 @@
+
+.singleItemName{
+    width: 10vw;
+    max-height: 90px;
+    border-radius: 10px;
+  
+
+}
+
+.singleItemImg{ width: 30vw;
+ height: 350px;
+ width: 400px;
+ border-radius: 10px;
+ margin: 1rem ;
+ object-fit: contain;
+}
+
+.singleItemCard{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .singleItemCard{
+        width: 28vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+       
+    }
+    .singleItemCard{
+        width: 35vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        overflow: hidden;
+    }
+    .singleItemName{
+        width: 30vw;
+        
+      
+    
+    }
+}

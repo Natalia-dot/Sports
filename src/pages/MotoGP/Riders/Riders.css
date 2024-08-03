@@ -1,0 +1,102 @@
+.Allpage {
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 1%;
+}
+
+.btnGallery{
+    margin: 1rem;
+}
+
+.mainPage {
+    background-color: #D90042;
+    width: 90vw;
+    min-height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 5%;
+}
+
+.displayImage {
+    width: 85vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--color-background);
+    border: var(--boder);
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.singleCardPlayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.columnaEnlaces {
+    width: 20vw;
+    height: 80vh;
+    background-color: rgb(156, 46, 46);
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    align-items:flex-end;
+    gap: 5px;
+}
+
+.seccionColumna {
+   width: 100%;
+   height: 33%;
+   background-color: aqua;
+  
+}
+
+.seccionUno {
+   background-color: rgb(247, 156, 156);
+}
+
+.seccionDos {
+   background-color: rgb(164, 164, 238);
+}
+
+.seccionTres {
+  background-color: rgb(167, 236, 167);
+}
+@media only screen and (max-width: 600px) {
+    .Allpage {
+     padding: 20px;
+    }
+ 
+
+   
+    .buscadorMario {
+        width: 100%;
+    }
+
+    .mainPage {
+      
+        flex-direction: column;
+       
+    }
+
+    .displayImage,
+    .columnaEnlaces {
+        width: 100%;
+       
+    }
+}

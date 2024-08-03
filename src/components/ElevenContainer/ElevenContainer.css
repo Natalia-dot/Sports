@@ -1,0 +1,44 @@
+.todoElEleven{
+    min-height: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+.formMainDataDos{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.espacio{
+    height: 100vh;
+
+   
+}
+
+.playerElevenName{
+    font-size: 12px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 3px;
+    max-height: 12px;
+}
+.byAlguienn{
+    color: black;
+    z-index: 100;
+  
+   position: relative;
+   top: -55%;
+    margin-top: 10px;
+ 
+    font-weight: bold;
+}
+.contenedorGeneralE{
+
+    min-height: 100vh;
+   margin-top: 700px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}

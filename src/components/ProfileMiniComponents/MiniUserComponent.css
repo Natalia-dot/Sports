@@ -1,0 +1,69 @@
+.miniUserComponent {
+    width: 45%;
+    max-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-fondo);
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 20px;
+    color: var(--color-almost-black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 650px) {
+  .miniUserComponent {
+    width: 100%
+  }
+
+  .firstFavNav {
+    width: 100%;
+ }
+}
+
+@media (min-width: 650px) {
+  .favGallery {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+.miniUserComponentLink {
+  width: 40%;
+  max-height: 15vh;
+  display: flex;
+  margin: 0.2rem;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(6, 40, 72);
+  border-radius: 20px;
+  color: rgb(173, 197, 218);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.miniUserComponent:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.miniUserComponentImage {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.miniUserComponent img {
+    border-radius: 20px;
+}
+
+.miniUserComponent:hover img {
+    opacity: 0.8;
+  }
+
+
+.miniUserComponentText {
+text-align: left;
+}

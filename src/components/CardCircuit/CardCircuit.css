@@ -1,0 +1,27 @@
+.singleItemCardCircuit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  /* margin: 0 0.5rem 0 0.5rem ; */
+}
+.singleItemImgCircuit{
+  width: 80%;
+  object-fit: cover;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  background-color: rgb(102, 100, 100);
+}
+
+.singleItemNameCircuit{
+  margin-top: 5px;
+  font-size: 15px;
+  height: 40px;
+  text-align: center;
+}
+
+#buttons-card-player{
+  display: flex;
+  gap: 1rem;
+}

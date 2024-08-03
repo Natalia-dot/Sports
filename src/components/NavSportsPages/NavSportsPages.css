@@ -1,0 +1,229 @@
+.dashboardTitle{
+    color: var(--color-font); 
+    text-align: center;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    animation: shineAnimation 2s ease-in-out infinite alternate; 
+    margin: 1rem;
+    transform: translateY(-300px); 
+    animation: fallAnimation 1s ease-in-out forwards 
+}
+
+.videoCircuit{
+    width: 30vw;
+    height: 30vh;
+}
+
+
+@keyframes shineAnimation {
+    from {
+        color: #6104bd; 
+    }
+    to {
+        color: rgb(110, 24, 209); 
+    }
+}
+
+
+@keyframes fallAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.navProfile {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--color-background);
+    position: relative;
+}
+
+.imageText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); /* Color del texto */
+    font-size: 58px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+  }
+
+.imageContainer {
+min-width: 550px;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+}
+
+.imageNav {
+    width: 40vw;
+    max-width: 600px;
+    min-width: 300px;
+   display: block;
+    border-radius: 30%;
+    position: relative;
+    border-width: 0 10px 10px 0;
+     border: 5px solid white;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+    z-index: 1;
+
+   
+}
+
+
+.izq{
+    
+     margin-top: -100px;
+     margin-left: 15vw;
+}
+.der:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+
+.imageNav:hover {
+    animation: shadowAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes shadowAnimation {
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+
+.imageNavDiv{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* opacity: .7; */
+/* display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr; */
+}
+& .imageCircuitsDiv, .imageMotoDiv{
+    opacity: .6;
+}
+
+& .imageCircuitsDiv:hover, .imageMotoDiv:hover{
+    opacity: 1
+}
+
+/* .imageNavCircuits:hover{
+    opacity: 1
+} */
+
+
+.positionAbsolute{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    
+}
+
+.blackCoverImg{
+    height: 90vh;
+width: 48vw;
+border-radius: 10px;
+}
+
+
+
+.displayNone:hover{
+display: none;
+
+}
+
+.imageMotoNav{
+    
+    height: 90vh;
+    width: 48vw;
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    
+}
+
+.singleImageNavContainer{
+    position: relative;
+    height: 90vh;
+    width: 48vw;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+    .dashboardTitle {
+        font-size: 1.8em; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        margin: 0.5rem; /* Ajusta el margen para dispositivos móviles */
+        transform: translateY(0); /* Restablece la transformación en dispositivos móviles */
+        animation: none; /* Desactiva la animación en dispositivos móviles */
+    }
+
+    .videoCircuit {
+        width: 100%; /* Haz que el video ocupe el 100% del ancho en dispositivos móviles */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .navProfile {
+        height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+    }
+
+    .imageContainer {
+        min-width: auto; /* Ajusta el ancho mínimo automáticamente en dispositivos móviles */
+        padding: 20px; /* Ajusta el relleno para dispositivos móviles */
+    }
+
+    .imageNav {
+        width: 50%; /* Ajusta el ancho de la imagen de navegación en dispositivos móviles */
+        max-width: none; /* Restablece el ancho máximo en dispositivos móviles */
+        min-width: auto; /* Restablece el ancho mínimo en dispositivos móviles */
+        margin-top: 0; /* Restablece el margen superior en dispositivos móviles */
+        margin-left: 0; /* Restablece el margen izquierdo en dispositivos móviles */
+    }
+
+    .der:hover {
+        transform: none; /* Restablece la transformación al hacer clic en dispositivos móviles */
+        z-index: 1; /* Restablece el índice z al hacer clic en dispositivos móviles */
+    }
+
+    .imageNav:hover {
+        animation: none; /* Desactiva la animación al hacer clic en dispositivos móviles */
+    }
+
+    .imageNavDiv {
+        flex-direction: column; /* Ajusta la dirección del flex container en dispositivos móviles */
+    }
+
+    .imageCircuitsDiv,
+    .imageMotoDiv {
+        opacity: 1; /* Restablece la opacidad en dispositivos móviles */
+    }
+
+    .displayNone:hover {
+        display: initial; /* Restablece la visualización al hacer clic en dispositivos móviles */
+    }
+    
+    .blackCoverImg,
+    .imageMotoNav,
+    .singleImageNavContainer {
+        width: 95%; /* Ajusta el ancho al 100% en dispositivos móviles */
+        height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+    }
+}

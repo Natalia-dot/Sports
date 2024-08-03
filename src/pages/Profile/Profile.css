@@ -1,0 +1,38 @@
+.profileDiv{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 80vh;
+    background-size: cover;
+   
+}
+
+.divNavProfile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90vw;
+    height: 8vh;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    
+
+}
+
+
+.divOutletProfile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    min-height: 50vh;
+    padding: 2vw;
+    margin: 1rem;
+    background-color: var(--color-primario);
+}
+

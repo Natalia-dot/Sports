@@ -1,0 +1,24 @@
+.singleItemCardPlayer{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.singleItemImgPlayer{
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 5px
+}
+
+.singleItemNamePlayer{
+  margin: 8px 0 0 0;
+  font-size: 15px;
+  height: 40px;
+  text-align: center;
+}
+
+#buttons-card-player{
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,23 @@
+.singleItemCardTeam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.singleItemImgTeam{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px
+}
+
+.singleItemNameTeam{
+  margin: 12px 0 0 0;
+  font-size: 15px;
+  height: 40px;
+  text-align: center;
+}
+
+#buttons-card-player{
+  display: flex;
+  gap: 1rem;
+}
