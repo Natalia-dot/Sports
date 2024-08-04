@@ -124,7 +124,7 @@
 .section {
   padding: 40px;
   text-align: center;
-  background-color: var(--color-fondo);
+  background-color: var(--color-background);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
@@ -144,7 +144,7 @@
 }
 
 .sectionTitle {
-  color: #2c3e50;
+  color: var(--color-text-home);
   margin-bottom: 20px;
 }
 

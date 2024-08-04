@@ -211,8 +211,8 @@ export const UserEleven = ({ elevenId }) => {
                 </div>
               </div>
             ) : (
-              <button className="btn" onClick={() => handleComment(allElevens?.data?._id)}>
-                Comments
+              <button className="btn podiumCard" onClick={() => handleComment(allElevens?.data?._id)}>
+                Show comments
               </button>
             )}
           </div>

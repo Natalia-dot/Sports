@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './CardMotoById.css'
+import '../CardFifaById/CardFifaById.css'
 import { buscarRiderId } from '../../../services/rider.service'
 import { useNavigate, useParams } from 'react-router-dom'
 import { addFavRiders, getUsersFavRiders } from '../../../services/user.service'
@@ -98,11 +99,11 @@ export const CardMotoById = () => {
       <div className="pageByidRider pageByid">
       <div className="imageIdDiv">
 
-        <button id='btnReturn' onClick={() => navigate("/motogp/riders")}>
+        <button style={{position: "absolute", top: '170px'}} id='btnReturn' onClick={() => navigate("/motogp/riders")}>
           <span 
            className="material-symbols-outlined">
 arrow_back_ios
-</span><p>All Riders</p>
+</span><p  >All Riders</p>
 </button>
 
           <img className='imageById imageRider' src={image} alt={name} />
@@ -159,10 +160,11 @@ arrow_back_ios
               onClick={() => addToLikes(idRider)}
               >favorite</span>
               </div>
-          </div>
-          <div id = "deletePlayerContainer">
+              <div id="deletePlayerContainer">
             {user.role === "admin" &&  <DeletePlayer  id = "DeletePlayer" playerId = {idRider} playerName = {name}/>}
           </div>
+          </div>
+         
      
           </div>
       </div>

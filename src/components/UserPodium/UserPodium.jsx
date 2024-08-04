@@ -143,8 +143,8 @@ export const UserPodium = ({ page, podiumId }) => {
                     </div>
                   </div>
                 ) : (
-                  <button    className="btn" onClick={() => handleComment(allPodiums?.data?._id)}>
-                    Comments
+                  <button    className="btn podiumCard" onClick={() => handleComment(allPodiums?.data?._id)}>
+                    Show comments
                   </button>
                 )}
               </div>

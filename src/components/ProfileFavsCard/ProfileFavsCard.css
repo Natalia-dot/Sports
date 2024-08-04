@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     background-color: var(--color-boton-motogp); /* Darker shade of blue */
     color: #ffffff; /* White text */
@@ -9,7 +10,8 @@
     border-radius: 8px;
     overflow: hidden;
     margin: 8px;
-    width: 100% /* Display 6 cards horizontally */
+    width: 100% /* Display 6 cards horizontally */;
+    max-width:40vw;
   }
   
   .favImageContainer {
@@ -22,6 +24,10 @@
   .favCardImag {
     width: 60%;
     object-fit:contain; /* Ensure the image covers the container */
+  }
+
+  .favCardImage{
+    border-radius: 25px;
   }
   
   .favCardDetails {
